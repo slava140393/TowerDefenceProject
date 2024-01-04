@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b56c82ab8fe947b4fa6c4459334315ea
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 229578
+  packageName: AI Tree - Behavior Trees for Unity
+  packageVersion: 1.8.7
+  assetPath: Assets/RenownedGames/Plugins/FastReflection/LICENSE
+  uploadId: 628853

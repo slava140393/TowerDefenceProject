@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 4da1b1d1d63efce4a9daf8c0611383f6
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 229578
+  packageName: AI Tree - Behavior Trees for Unity
+  packageVersion: 1.8.7
+  assetPath: Assets/RenownedGames/AITree/README.md
+  uploadId: 628853
