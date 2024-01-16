@@ -17,6 +17,23 @@ MonoBehaviour:
   sync: 0
   isLocal: 0
   value: {fileID: 0}
+--- !u!114 &-7457952461173148296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b97a1cab3e25e246a1321c1c6515ce3, type: 3}
+  m_Name: IsInMeleeRange
+  m_EditorClassIdentifier: 
+  category: Attack
+  description: 
+  sync: 0
+  isLocal: 0
+  value: 0
 --- !u!114 &-5736361898465422472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29,11 +46,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81988d2f5a5807241b45a076853c02f1, type: 3}
   m_Name: MoveOnStartPoint
   m_EditorClassIdentifier: 
-  category: 
+  category: Initialize
   description: 
   sync: 0
   isLocal: 0
   value: {x: 0, y: 0, z: 0}
+--- !u!114 &-2765368615451573465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1c717f2aa08147478edeef178e4461d, type: 3}
+  m_Name: Target
+  m_EditorClassIdentifier: 
+  category: Attack
+  description: 
+  sync: 0
+  isLocal: 0
+  value: {fileID: 0}
 --- !u!114 &-389144487871439043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,7 +103,49 @@ MonoBehaviour:
   - {fileID: -389144487871439043}
   - {fileID: 4227963775923087399}
   - {fileID: 5540032034521899445}
+  - {fileID: 886228712344197046}
+  - {fileID: -2765368615451573465}
+  - {fileID: -7457952461173148296}
+  - {fileID: 8869282017595603643}
+  - {fileID: 3776531237447127356}
+  - {fileID: 7458079798002605902}
+  - {fileID: 4599450805537658485}
+  - {fileID: 8268112999029885882}
   parent: {fileID: 0}
+--- !u!114 &886228712344197046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b97a1cab3e25e246a1321c1c6515ce3, type: 3}
+  m_Name: HaveTarget
+  m_EditorClassIdentifier: 
+  category: Attack
+  description: 
+  sync: 0
+  isLocal: 0
+  value: 0
+--- !u!114 &3776531237447127356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b97a1cab3e25e246a1321c1c6515ce3, type: 3}
+  m_Name: InLineOfSight
+  m_EditorClassIdentifier: 
+  category: Attack
+  description: 
+  sync: 0
+  isLocal: 0
+  value: 0
 --- !u!114 &4227963775923087399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,9 +156,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b97a1cab3e25e246a1321c1c6515ce3, type: 3}
-  m_Name: NotAtTheGuardPoint
+  m_Name: AtTheGuardPoint
   m_EditorClassIdentifier: 
   category: GuardPoint
+  description: 
+  sync: 0
+  isLocal: 0
+  value: 0
+--- !u!114 &4599450805537658485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b97a1cab3e25e246a1321c1c6515ce3, type: 3}
+  m_Name: IsInit
+  m_EditorClassIdentifier: 
+  category: 
   description: 
   sync: 0
   isLocal: 0
@@ -104,3 +197,54 @@ MonoBehaviour:
   sync: 0
   isLocal: 0
   value: {x: 0, y: 0, z: 0}
+--- !u!114 &7458079798002605902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b97a1cab3e25e246a1321c1c6515ce3, type: 3}
+  m_Name: IsActive
+  m_EditorClassIdentifier: 
+  category: Initialize
+  description: 
+  sync: 0
+  isLocal: 0
+  value: 0
+--- !u!114 &8268112999029885882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b97a1cab3e25e246a1321c1c6515ce3, type: 3}
+  m_Name: CanTaunt
+  m_EditorClassIdentifier: 
+  category: Taunt
+  description: 
+  sync: 0
+  isLocal: 0
+  value: 0
+--- !u!114 &8869282017595603643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b97a1cab3e25e246a1321c1c6515ce3, type: 3}
+  m_Name: AttackReady
+  m_EditorClassIdentifier: 
+  category: Attack
+  description: 
+  sync: 0
+  isLocal: 0
+  value: 0

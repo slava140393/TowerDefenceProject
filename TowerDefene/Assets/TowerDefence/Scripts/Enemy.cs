@@ -10,9 +10,9 @@ namespace DefaultNamespace
 		[SerializeField] private BehaviourRunner _behaviourRunner;
 		private Blackboard _blackboard;
 
-		[SerializeField] private TargetSensor _chaseSensor;
-		[SerializeField] private TargetSensor _spitSensor;
-		[SerializeField] private TargetSensor _meleeSensor;
+		[SerializeField] private TargetSensor2 _chaseSensor2;
+		[SerializeField] private TargetSensor2 _spitSensor2;
+		[SerializeField] private TargetSensor2 _meleeSensor2;
 		[SerializeField] private Transform _spitSpawnLocation;
 
 		[Header("Attack Configs")]
@@ -30,12 +30,12 @@ namespace DefaultNamespace
 
 		private void Start()
 		{
-			_chaseSensor.OnTargetEnter += ChaseSensorOnPlayerEnter;
-			_chaseSensor.OnTargetExit += ChaseSensorOnPlayerExit;
-			_spitSensor.OnTargetEnter += SpitSensorOnPlayerEnter;
-			_spitSensor.OnTargetExit += SpitSensorOnPlayerExit;
-			_meleeSensor.OnTargetEnter += MeleeSensorOnPlayerEnter;
-			_meleeSensor.OnTargetExit += MeleeSensorOnPlayerExit;
+			_chaseSensor2.OnTargetEnter += ChaseSensor2OnPlayerEnter;
+			_chaseSensor2.OnTargetExit += ChaseSensor2OnPlayerExit;
+			_spitSensor2.OnTargetEnter += SpitSensor2OnPlayerEnter;
+			_spitSensor2.OnTargetExit += SpitSensor2OnPlayerExit;
+			_meleeSensor2.OnTargetEnter += MeleeSensor2OnPlayerEnter;
+			_meleeSensor2.OnTargetExit += MeleeSensor2OnPlayerExit;
 			_blackboard = _behaviourRunner.GetBlackboard();
 		}
 
@@ -81,11 +81,11 @@ namespace DefaultNamespace
 			}
 		}
 
-		private void ChaseSensorOnPlayerEnter(Transform target) => _isInChaseRange = true;
-		private void ChaseSensorOnPlayerExit(Vector3 lastKnownPosition) => _isInChaseRange = false;
-		private void SpitSensorOnPlayerEnter(Transform target) => _isInSpitRange = true;
-		private void SpitSensorOnPlayerExit(Vector3 lastKnownPosition) => _isInSpitRange = false;
-		private void MeleeSensorOnPlayerEnter(Transform target) => _isInMeleeRange = true;
-		private void MeleeSensorOnPlayerExit(Vector3 lastKnownPosition) => _isInMeleeRange = false;
+		private void ChaseSensor2OnPlayerEnter(Transform target) => _isInChaseRange = true;
+		private void ChaseSensor2OnPlayerExit(Vector3 lastKnownPosition) => _isInChaseRange = false;
+		private void SpitSensor2OnPlayerEnter(Transform target) => _isInSpitRange = true;
+		private void SpitSensor2OnPlayerExit(Vector3 lastKnownPosition) => _isInSpitRange = false;
+		private void MeleeSensor2OnPlayerEnter(Transform target) => _isInMeleeRange = true;
+		private void MeleeSensor2OnPlayerExit(Vector3 lastKnownPosition) => _isInMeleeRange = false;
 	}
 }

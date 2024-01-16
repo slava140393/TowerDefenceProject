@@ -1,5 +1,7 @@
 using System.Collections;
 using TowerDefence.Scripts.Enemies;
+using TowerDefence.Scripts.Units;
+using TowerDefence.Scripts.Units.EnemyUnits;
 using UnityEngine;
 
 namespace TowerDefence.Scripts.Tower.Projectiles
@@ -11,7 +13,7 @@ namespace TowerDefence.Scripts.Tower.Projectiles
 
 		private float _activateTime;
 
-		public override void Initialize(Transform target, Transform poolPoint)
+		public override void Initialize(TakeDamageComponent target, Transform poolPoint)
 		{
 			_poolPoint = poolPoint;
 			transform.position = poolPoint.position;
@@ -19,7 +21,7 @@ namespace TowerDefence.Scripts.Tower.Projectiles
 
 			//	float angle = _angle * Mathf.Deg2Rad;
 
-			Vector3 direction = target.position - poolPoint.position;
+			Vector3 direction = target.transform.position - poolPoint.position;
 			Vector3 groundDirection = new Vector3(direction.x, 0, direction.z);
 			Vector3 targetPosition = new Vector3(groundDirection.magnitude, direction.y, 0);
 

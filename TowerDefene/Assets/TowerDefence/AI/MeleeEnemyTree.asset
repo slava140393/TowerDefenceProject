@@ -1,5 +1,25 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9212380289032263244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28e1223c01b3a4f458e0b5d043ec4a15, type: 3}
+  m_Name: SetFloatTask
+  m_EditorClassIdentifier: 
+  nodeName: SetAnimatorLocomotionType
+  nodePosition: {x: 624.6, y: 807.2}
+  breakpoint: 0
+  decorators: []
+  services: []
+  ignoreAbortSelf: 0
+  parameterName: LocomotionType
+  value: {fileID: 4722832790391692149}
 --- !u!114 &-9094992840742343833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19,8 +39,8 @@ MonoBehaviour:
   services: []
   children:
   - {fileID: -8932554032217683802}
-  - {fileID: 454708412830260416}
-  - {fileID: 5860147447818158079}
+  - {fileID: 4982120454762091359}
+  - {fileID: -1183646131023773184}
 --- !u!114 &-9005347437158778976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102,7 +122,7 @@ MonoBehaviour:
   breakpoint: 0
   child: {fileID: 0}
   notifyObserver: 0
-  observerAbort: 3
+  observerAbort: 1
   key: {fileID: -8613553305331624879, guid: 217f88065318d3e4bae6a2fce2aa9233, type: 2}
   keyQuery:
     rid: 4514214817477951489
@@ -126,7 +146,7 @@ MonoBehaviour:
   m_Name: SetFloatTask
   m_EditorClassIdentifier: 
   nodeName: SetAnimatorLocomotionType
-  nodePosition: {x: 314, y: 469}
+  nodePosition: {x: -280.79193, y: 615.2286}
   breakpoint: 0
   decorators: []
   services: []
@@ -146,13 +166,13 @@ MonoBehaviour:
   m_Name: SequencerNode
   m_EditorClassIdentifier: 
   nodeName: RunToTarget
-  nodePosition: {x: 1034.9177, y: 470.51428}
+  nodePosition: {x: 495.8944, y: 306.2733}
   breakpoint: 0
   decorators:
-  - {fileID: 7295595646623356420}
+  - {fileID: 7046787279117375179}
   services: []
   children:
-  - {fileID: 566466683501539972}
+  - {fileID: 3452330944655812763}
 --- !u!114 &-968262974253419318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,12 +186,32 @@ MonoBehaviour:
   m_Name: SetTriggerTask
   m_EditorClassIdentifier: 
   nodeName: SetAnimatorTriggerAttacking
-  nodePosition: {x: -304, y: 625}
+  nodePosition: {x: 328.6, y: 1020.2}
   breakpoint: 0
   decorators: []
   services: []
   ignoreAbortSelf: 0
   parameterName: Attacking
+--- !u!114 &-836219373618765953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20ecbd642284b504ca1789fb521bbe87, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  nodeName: Sequencer
+  nodePosition: {x: 682.60004, y: 653}
+  breakpoint: 0
+  decorators: []
+  services: []
+  children:
+  - {fileID: -9212380289032263244}
+  - {fileID: 566466683501539972}
 --- !u!114 &-103124600476238109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,7 +229,7 @@ MonoBehaviour:
   breakpoint: 0
   child: {fileID: 0}
   notifyObserver: 0
-  observerAbort: 3
+  observerAbort: 1
   key: {fileID: 7805499100022237260, guid: 217f88065318d3e4bae6a2fce2aa9233, type: 2}
   keyQuery:
     rid: 4514214817477951490
@@ -213,13 +253,13 @@ MonoBehaviour:
   m_Name: MoveToTask
   m_EditorClassIdentifier: 
   nodeName: MoveToPathPoint
-  nodePosition: {x: 665.6796, y: 468.7571}
+  nodePosition: {x: 71.20804, y: 615.2286}
   breakpoint: 0
   decorators: []
   services: []
   ignoreAbortSelf: 0
   key: {fileID: -3498831785697046038, guid: 217f88065318d3e4bae6a2fce2aa9233, type: 2}
-  acceptableRadius: 2
+  acceptableRadius: 0.1
   includeAgentRadius: 1
   includeGoalRadius: 1
   allowPartialPath: 0
@@ -244,11 +284,9 @@ MonoBehaviour:
   nodes:
   - {fileID: -5032283126337081850}
   - {fileID: -9094992840742343833}
-  - {fileID: 5860147447818158079}
   - {fileID: -2354176963826518454}
   - {fileID: -88023943794032540}
   - {fileID: -1183646131023773184}
-  - {fileID: 7295595646623356420}
   - {fileID: 566466683501539972}
   - {fileID: 454708412830260416}
   - {fileID: -2715587277136589887}
@@ -257,6 +295,12 @@ MonoBehaviour:
   - {fileID: -8932554032217683802}
   - {fileID: -9005347437158778976}
   - {fileID: 4567871130261998825}
+  - {fileID: 4982120454762091359}
+  - {fileID: -9212380289032263244}
+  - {fileID: 7046787279117375179}
+  - {fileID: 1490032622518904883}
+  - {fileID: 3452330944655812763}
+  - {fileID: -836219373618765953}
   groups: []
   notes: []
   selectedNode: {fileID: 0}
@@ -273,7 +317,7 @@ MonoBehaviour:
   m_Name: SequencerNode
   m_EditorClassIdentifier: 
   nodeName: Attack
-  nodePosition: {x: -275.6521, y: 305}
+  nodePosition: {x: 356.60004, y: 700.2}
   breakpoint: 0
   decorators:
   - {fileID: -2715587277136589887}
@@ -294,7 +338,7 @@ MonoBehaviour:
   m_Name: MoveToTask
   m_EditorClassIdentifier: 
   nodeName: MoveToTarger
-  nodePosition: {x: 1037.0656, y: 676.2428}
+  nodePosition: {x: 933.6001, y: 816.2}
   breakpoint: 0
   decorators: []
   services: []
@@ -306,6 +350,34 @@ MonoBehaviour:
   allowPartialPath: 0
   trackMovingGoal: 1
   goLastPointOnLost: 0
+--- !u!114 &1490032622518904883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 188f33bd97f999943bfba3bc98458f77, type: 3}
+  m_Name: BlackboardConditionDecorator
+  m_EditorClassIdentifier: 
+  nodeName: Blackboard Condition
+  nodePosition: {x: 0, y: 0}
+  breakpoint: 0
+  child: {fileID: 0}
+  notifyObserver: 0
+  observerAbort: 3
+  key: {fileID: -6822579144278504508, guid: 217f88065318d3e4bae6a2fce2aa9233, type: 2}
+  keyQuery:
+    rid: 226436980201488459
+  references:
+    version: 2
+    RefIds:
+    - rid: 226436980201488459
+      type: {class: BoolQuery, ns: RenownedGames.AITree, asm: AITree}
+      data:
+        comparer: 0
 --- !u!114 &2094119004748031856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -323,6 +395,26 @@ MonoBehaviour:
   sync: 0
   isLocal: 1
   value: 1
+--- !u!114 &3452330944655812763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa1770628119ce54980deb844516c178, type: 3}
+  m_Name: SelectorNode
+  m_EditorClassIdentifier: 
+  nodeName: Selector
+  nodePosition: {x: 535.00006, y: 519.4}
+  breakpoint: 0
+  decorators: []
+  services: []
+  children:
+  - {fileID: 454708412830260416}
+  - {fileID: -836219373618765953}
 --- !u!114 &4567871130261998825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -342,7 +434,24 @@ MonoBehaviour:
   services: []
   ignoreAbortSelf: 0
   parameterName: Dying
---- !u!114 &5860147447818158079
+--- !u!114 &4722832790391692149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd402de4eb7669046830c326d89b03b4, type: 3}
+  m_Name: value
+  m_EditorClassIdentifier: 
+  category: 
+  description: 
+  sync: 0
+  isLocal: 1
+  value: 1
+--- !u!114 &4982120454762091359
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -354,16 +463,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20ecbd642284b504ca1789fb521bbe87, type: 3}
   m_Name: SequencerNode
   m_EditorClassIdentifier: 
-  nodeName: RunTo
-  nodePosition: {x: 405.44305, y: 293.94012}
+  nodeName: Sequencer
+  nodePosition: {x: -197.79198, y: 354.2286}
   breakpoint: 0
-  decorators: []
+  decorators:
+  - {fileID: 1490032622518904883}
   services: []
   children:
   - {fileID: -2354176963826518454}
   - {fileID: -88023943794032540}
-  - {fileID: -1183646131023773184}
---- !u!114 &7295595646623356420
+--- !u!114 &7046787279117375179
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -375,19 +484,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 188f33bd97f999943bfba3bc98458f77, type: 3}
   m_Name: BlackboardConditionDecorator
   m_EditorClassIdentifier: 
-  nodeName: HaveTarget?
+  nodeName: Blackboard Condition
   nodePosition: {x: 0, y: 0}
   breakpoint: 0
   child: {fileID: 0}
   notifyObserver: 0
-  observerAbort: 1
+  observerAbort: 3
   key: {fileID: -6822579144278504508, guid: 217f88065318d3e4bae6a2fce2aa9233, type: 2}
   keyQuery:
-    rid: 4514214817477951488
+    rid: 226436980201488455
   references:
     version: 2
     RefIds:
-    - rid: 4514214817477951488
+    - rid: 226436980201488455
       type: {class: BoolQuery, ns: RenownedGames.AITree, asm: AITree}
       data:
         comparer: 1

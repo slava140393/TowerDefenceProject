@@ -4,11 +4,11 @@ namespace TowerDefence.Scripts.Tower
 {
 	public class AttackTower : Tower
 	{
-		[SerializeField] private ActionLauncher _actionLauncher;
+		[SerializeField] private ProjectileLauncher _projectileLauncher;
 
 		private void Start()
 		{
-			_actionLauncher.Initialize();
+			_projectileLauncher.Initialize();
 		}
 		
 	}

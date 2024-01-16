@@ -1,13 +1,14 @@
+using TowerDefence.Scripts.Units;
 using UnityEngine;
 
 namespace TowerDefence.Scripts.Tower.Projectiles
 {
-	public abstract class Projectile : MonoBehaviour
+	public abstract class Projectile : MonoBehaviour,IPoolableObject
 	{
-		protected Transform _target;
+		protected TakeDamageComponent _target;
 		protected Transform _poolPoint;
 		protected Coroutine _projectileMoveRoutine;
 
-		public abstract void Initialize(Transform target, Transform poolPoint);
+		public abstract void Initialize(TakeDamageComponent target, Transform poolPoint);
 	}
 }
